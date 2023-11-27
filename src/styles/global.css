@@ -29,6 +29,11 @@ html {
     color: #0d47a1
     }
 
+    nav a:hover {
+      text-decoration: none;
+      background: #cdfeaa;
+    }
+
   
   body {
 
