@@ -14,11 +14,10 @@ import Header from '../components/Header.astro';
 	</head>
 	<body>
 		<Header />
+		<main>
 		<h1>{pageTitle}</h1>
-		<slot />
-	<Footer>
-		<script>
-			    import "../scripts/menu.js";
-		  </script>
+		<slot/>
+		<Footer>
+	</main>
 	</body>
 </html>
