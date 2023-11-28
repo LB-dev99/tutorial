@@ -11,4 +11,6 @@ import BlogPost from '../components/BlogPost.astro';
     
         {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
   </ul>
+
 </BaseLayout>
+  
