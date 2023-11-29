@@ -1,7 +1,4 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Navigation from '../components/Navigation.astro';
-import Header from '../components/Header.astro';
 const pageTitle = "Prove CSS";
 ---
 <!-- <BaseLayout> -->
@@ -36,6 +33,18 @@ const pageTitle = "Prove CSS";
 </body>
 
   <style>
+
+html {
+    background-color: #173e4c;
+    font-family: sans-serif;
+    color: #ffffff;
+  }
+  
+  * {
+    padding: 0;
+	  margin: 0;
+  }
+
 
 body {
   display: grid;
@@ -93,7 +102,6 @@ nav {
 }
 .header {
   grid-area: hd;
-  background-color: blueviolet;
   place-items: center;
 }
 
