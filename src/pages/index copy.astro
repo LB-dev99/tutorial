@@ -1,10 +1,14 @@
 ---
-const pageTitle = "Prove CSS";
+const pageTitle = "Prove CSS"
 ---
 <!-- <BaseLayout> -->
+
+
+
 <body>
 
 <nav class="header">
+  <img src="public/logo.svg" alt=""Pattern 1" width="80" height="80">
   <h2><a href="/">Climasolservice</a></h2>
   <ul>
         <li><a href="/">Home</a></li>
@@ -30,7 +34,28 @@ const pageTitle = "Prove CSS";
   </main>
   <aside class="sidebar el"><h2>Sidebar</h2></aside>
 <footer class="footer el">Footer</footer>
+
+
+
+<section class="example">
+
+  <p>
+    <img src="public/favicon.svg" alt="Pattern 1" width="200" height="200">
+  </p>
+</section>
+
+
+
+
+
 </body>
+
+
+
+
+
+
+
 
   <style>
 
@@ -59,7 +84,6 @@ body {
 
 nav {
     display: flex; /* 1 */
-    justify-content: space-between; /* 2 */
     padding: 1rem 2rem; /* 3 */
     background-color: #333;
 
@@ -67,7 +91,9 @@ nav {
     
     nav ul {
     display: flex; /* 5 */
+    margin-left: auto;
     list-style: none; /* 6 */
+    justify-self: flex-end;
     }
     
     nav li {
@@ -93,6 +119,11 @@ nav {
       color: rgb(184, 184, 184);
     }
   
+.climas {
+
+  justify-self: flex-start;
+
+}
 
 .el {
   background-color: rebeccapurple;

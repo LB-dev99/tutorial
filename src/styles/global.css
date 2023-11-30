@@ -11,7 +11,8 @@ html {
 
   nav {
     display: flex; /* 1 */
-    justify-content: space-between; /* 2 */
+    justify-content: flex-start; /* 2 */
+    align-items: center;
     padding: 1rem 2rem; /* 3 */
     background-color: #333;
 
@@ -19,6 +20,7 @@ html {
     
     nav ul {
     display: flex; /* 5 */
+    margin-left: auto;
     list-style: none; /* 6 */
     }
     
@@ -34,7 +36,7 @@ html {
 
     nav h2 {
 
-
+      padding-left: 1rem;
       font-size: 2rem;
     }
 
