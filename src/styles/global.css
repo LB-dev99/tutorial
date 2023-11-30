@@ -78,42 +78,30 @@ img {
   }
 
 
+  @media screen and (max-width: 750px) {
 
+    img {
+      display: none;
+    }
+  
+    nav {
+      display: flex;
+      justify-content: center;
+  
+    }
+  
+    nav ul {
+      margin: auto;
+      flex-wrap: nowrap;
+    }
+    
+  }
 
 
   
 @media screen and (max-width: 370px) {
 
-
-  img {
-    display: none;
+  body{
+    width: fit-content;
   }
-
-  nav {
-    width: 50ch;
-  }
-
-  nav ul {
-    margin: auto;
-    flex-wrap: wrap;
-  }
-  
-}
-@media screen and (max-width: 750px) {
-
-  img {
-    display: none;
-  }
-
-  nav {
-    display: flex;
-    justify-content: center;
-
-  }
-
-  nav ul {
-    margin: auto;
-    flex-wrap: nowrap;
-  }
-  
 }
