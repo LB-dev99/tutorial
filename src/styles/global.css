@@ -1,3 +1,5 @@
+
+
 html {
     background-color: #173e4c;
     font-family: sans-serif;
@@ -9,19 +11,27 @@ html {
 	  margin: 0;
   }
 
+img {
+  display: block;
+
+}
+
+
   nav {
+    
     display: flex; /* 1 */
     justify-content: flex-start; /* 2 */
     align-items: center;
-    padding: 1rem 2rem; /* 3 */
+    padding: 1rem 2rem; 
     background-color: #333;
-
+    flex-wrap: wrap;
     }
     
     nav ul {
     display: flex; /* 5 */
     margin-left: auto;
     list-style: none; /* 6 */
+    flex-wrap: wrap;
     }
     
     nav li {
@@ -53,6 +63,7 @@ html {
 
   main {
 
+    display: grid;
     margin: 0 auto;
     width: 100%;
     max-width: 100ch;
@@ -67,3 +78,42 @@ html {
   }
 
 
+
+
+
+  
+@media screen and (max-width: 370px) {
+
+
+  img {
+    display: none;
+  }
+
+  nav {
+    width: 50ch;
+  }
+
+  nav ul {
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  
+}
+@media screen and (max-width: 750px) {
+
+  img {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  nav ul {
+    margin: auto;
+    flex-wrap: nowrap;
+  }
+  
+}

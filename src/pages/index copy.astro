@@ -2,6 +2,12 @@
 const pageTitle = "Prove CSS"
 ---
 <!-- <BaseLayout> -->
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <meta name="viewport" content="width=device-width, initia-scale=1.0"/>
+      <meta name="generator" content={Astro.generator} />
 
 
 
@@ -58,6 +64,8 @@ const pageTitle = "Prove CSS"
 
 
   <style>
+
+
 
 html {
     background-color: #173e4c;
@@ -118,6 +126,51 @@ nav {
       text-decoration: underline;
       color: rgb(184, 184, 184);
     }
+
+
+
+    @media screen and (max-width: 370px) {
+
+
+img {
+  display: none;
+}
+
+nav h2 {
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+}
+@media screen and (max-width: 750px) {
+
+img {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+
+}
+
+nav ul {
+  margin: auto;
+  flex-wrap: nowrap;
+}
+
+}
+
+
   
 .climas {
 
