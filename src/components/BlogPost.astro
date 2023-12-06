@@ -1,8 +1,24 @@
 ---
 
 const { title, url } = Astro.props;
+import Card from "./Card.astro";
 
 ---
 
 <li class="hover:underline"><a href={url}>{title}</a></li>
 
+<ul>
+    <li>
+      <Card
+        url={url}
+        img="/assets/post-cover.jpg"
+        title={title}
+        footer="Tony Stark"
+      >
+        Lorem ipsum dolor sit amet.
+      </Card>
+    </li>
+    <li>
+      <!-- ... -->
+    </li>
+  </ul>

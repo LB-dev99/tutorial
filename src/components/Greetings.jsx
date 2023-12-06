@@ -1,4 +1,5 @@
 import { useState } from 'preact/hooks';
+import Styles from '../styles/botton.css'
 
 export default function Greeting({messages}) {
 
@@ -8,10 +9,10 @@ export default function Greeting({messages}) {
 
   return (
     <div>
-      <h3>{greeting}! Thank you for visiting!</h3>
-      <button onClick={() => setGreeting(randomMessage())}>
-        New Greeting
+      <h3>{greeting}! Grazie per aver visitato il sito di prova!</h3>
+      <button class='glowing-btn'   onClick={() => setGreeting(randomMessage())}><span class='glowing-txt'>C<span class='faulty-letter'>L</span>ICK</span>
       </button>
     </div>
   );
 }
+

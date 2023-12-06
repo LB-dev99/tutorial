@@ -1,8 +1,45 @@
+/* Register your custom font family and tell the browser where to find it. */
+@font-face {
+  font-family: 'PP Mori';
+  src: url('../../public/fonts/PPMori-Extralight.otf') format('OpenType');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PP Mori';
+  src: url('../../public/fonts/PPMori-ExtralightItalic.otf') format('OpenType');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'PP Mori';
+  src: url('../../public/fonts/PPMori-Regular.otf') format('OpenType');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PP Mori';
+  src: url('../../public/fonts/PPMori-RegularItalic.otf') format('OpenType');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'PP Mori';
+  src: url('../../public/fonts/PPMori-SemiBold.otf') format('OpenType');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PP Mori';
+  src: url('../../public/fonts/PPMori-SemiBoldItalic.otf') format('OpenType');
+  font-weight: 600;
+  font-style: italic;
+}
 
 
 html {
     background-color: #173e4c;
-    font-family: sans-serif;
+    font-family: PP Mori;
     color: #ffffff;
   }
   
@@ -10,6 +47,20 @@ html {
     padding: 0;
 	  margin: 0;
   }
+
+  html.dark {
+    background-color: #0d0950;
+    color: #fff;
+  }
+  
+  .dark .nav-links a {
+    color: #fff;
+  }
+
+  .greeting {
+    background-color: aqua;
+  }
+
 
   /* HEADER */
 
@@ -28,7 +79,7 @@ nav {
 
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 860px) {
 
 
   
@@ -73,7 +124,8 @@ nav {
     }
 
     nav h2 {
-
+      font-family: PP Mori ;
+      font-weight: 600;
       padding-left: 1rem;
       font-size: 2rem;
     }
