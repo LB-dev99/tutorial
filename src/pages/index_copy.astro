@@ -17,7 +17,7 @@ const pageTitle = "Prove CSS"
   <img src="public/logo.svg" alt=""Pattern 1" width="80" height="80">
   <h2><a href="/">Climasolservice</a></h2>
   <ul>
-        <li><a href="/">Home</a></li>
+        <li><a href="/" class="group transition duration-300">Home <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span> </a></li>
         <li><a href="/blog">Blog</a></li>
         <li><a href="/about">Chi siamo</a></li>
         <li><a href="/index_copy">Prove CSS</a></li>
@@ -31,7 +31,10 @@ const pageTitle = "Prove CSS"
     <div class="box"><h2>Qui provo roba con CSS</h2></div>
     <div class="box">2</div>
     <div class="box">3</div>
-    <div class="box">4</div>
+    <div class="box"><a href="#" class="group text-sky-600 transition duration-300">
+      Link
+      <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+      </a> </div>
     <div class="box">5</div>
     <div class="box">6</div>
 
@@ -55,6 +58,8 @@ const pageTitle = "Prove CSS"
 
 
 </body>
+
+
 
 
 
@@ -170,6 +175,11 @@ nav ul {
 
 }
 
+
+div:nth-child(4) {
+
+  background-color: green;
+}
 
   
 .climas {

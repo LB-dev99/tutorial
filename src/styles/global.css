@@ -106,15 +106,14 @@ nav {
 
     
     nav ul {
-    display: flex; /* 5 */
+    display: flex;
     justify-content: space-around;
-    /* margin-left: auto; */
-    list-style: none; /* 6 */
+    list-style: none; 
     flex-wrap: wrap;
     }
     
     nav li {
-    padding: 1rem; /* 7! */
+    padding: 1rem; 
     
     }
   
@@ -132,9 +131,9 @@ nav {
 
     
 
-    nav li a:hover {
-      text-decoration: underline;
-      color: rgb(184, 184, 184);
+    nav li a:hover, a:focus {
+ 
+      color: lightgray
     }
   
   body {
