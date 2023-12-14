@@ -37,25 +37,85 @@
 }
 
 
-html {
-    background-color: #173e4c;
-    font-family: PP Mori;
-    color: #ffffff;
-  }
+/* RESETS */
   
-  * {
-    padding: 0;
-	  margin: 0;
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea {
+  font: inherit;
+}
+
+.greeting {
+  background-color: aqua;
+}
+
+
+  /* VARIABLES */
+
+  :root {
+
+    /* FONTS */
+
+    --FF: "PP Mori", sans-serif;
+    --FF-HEADINGS: "PP Mori";
+    --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+    /* COLORS */
+    --HEADER-BGCOLOR: #333;
+    --FONT-COLOR: #ffffff;
   }
 
-  html.dark {
-    background-color: #0d0950;
-    color: #fff;
-  }
+  /*BORDERS*/
   
-  .dark .nav-links a {
-    color: #fff;
-  }
+
+
+
+  
+/* UTILITY CLASSES */
+
+.offscreen {
+  position: absolute;
+  left: -100000px;
+}
+
+
+.nowrap {
+  white-space: nowrap;
+}
+
+
+.center{
+  text-align: center;
+}
+
+
+/* GENERAL STYLE  */
+
+
+html {
+  scroll-behavior: smooth;
+  background-color: #173e4c;   
+  font-size: var(--FS);  
+  font-family: var(--FF);
+  color: #ffffff;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0 auto;
+}
 
   .greeting {
     background-color: aqua;
@@ -69,6 +129,7 @@ html {
 
   /* SMALL */
 
+
 nav {
   max-height: 11rem;
   display: grid;
@@ -77,6 +138,10 @@ nav {
   padding-top: 1rem;
   gap: 1rem;
 
+}
+
+logo {
+  padding: 0rem 1rem;
 }
 
 @media screen and (min-width: 860px) {
